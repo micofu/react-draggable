@@ -81,19 +81,11 @@ var App = React.createClass({
         </Draggable>
         <Draggable onDrag={this.handleDrag} {...dragHandlers}>
           <div>
-           <button type="button">Click Me!</button>
-            <div>I track my deltas</div>
-            <div>x: {deltaPosition.x.toFixed(0)}, y: {deltaPosition.y.toFixed(0)}</div>
-          </div>
-        </Draggable>
-         <Draggable onDrag={this.handleDrag} {...dragHandlers}>
-          <div>
-
-<ul>
+           <ul>
   <li>Coffee</li>
   <li>Tea</li>
-  <li>Milk</li>
-</ul> 
+  <li>Milk</li> 
+   </ul> 
             <div>I track my deltas</div>
             <div>x: {deltaPosition.x.toFixed(0)}, y: {deltaPosition.y.toFixed(0)}</div>
           </div>
