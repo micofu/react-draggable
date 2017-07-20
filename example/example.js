@@ -81,11 +81,12 @@ var App = React.createClass({
         </Draggable>
         <Draggable onDrag={this.handleDrag} {...dragHandlers}>
           <div>
-           <ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li> 
-   </ul> 
+           <select>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select> 
             <div>I track my deltas</div>
             <div>x: {deltaPosition.x.toFixed(0)}, y: {deltaPosition.y.toFixed(0)}</div>
           </div>
