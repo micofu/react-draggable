@@ -68,7 +68,7 @@ var App = React.createClass({
           <a href="https://github.com/mzabriskie/react-draggable/blob/master/example/index.html">Demo Source</a>
         </p>
         <Draggable zIndex={100} {...dragHandlers}>
-          <div className="box">I can be dragged anywhere</div>
+          <div><button type="submit"/></div>
         </Draggable>
         <Draggable axis="x" {...dragHandlers}>
           <div className="box cursor-x">I can only be dragged horizonally (x axis)</div>
