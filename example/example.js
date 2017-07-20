@@ -80,10 +80,11 @@ var App = React.createClass({
           <div className="box">I don't want to be dragged</div>
         </Draggable>
         <Draggable onDrag={this.handleDrag} {...dragHandlers}>
-           <button type="button">Click Me! 
+          <div>
+           <button type="button">Click Me!</button>
             <div>I track my deltas</div>
             <div>x: {deltaPosition.x.toFixed(0)}, y: {deltaPosition.y.toFixed(0)}</div>
-          </button>
+          </div>
         </Draggable>
         <Draggable handle="strong" {...dragHandlers}>
           <div className="box no-cursor">
