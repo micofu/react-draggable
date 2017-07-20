@@ -68,7 +68,7 @@ var App = React.createClass({
           <a href="https://github.com/mzabriskie/react-draggable/blob/master/example/index.html">Demo Source</a>
         </p>
         <Draggable zIndex={100} {...dragHandlers}>
-          <div><button type="submit"/></div>
+          <div> <button type="button">Click Me!</button> </div>
         </Draggable>
         <Draggable axis="x" {...dragHandlers}>
           <div className="box cursor-x">I can only be dragged horizonally (x axis)</div>
@@ -80,10 +80,10 @@ var App = React.createClass({
           <div className="box">I don't want to be dragged</div>
         </Draggable>
         <Draggable onDrag={this.handleDrag} {...dragHandlers}>
-          <div className="box">
+           <button type="button">Click Me! 
             <div>I track my deltas</div>
             <div>x: {deltaPosition.x.toFixed(0)}, y: {deltaPosition.y.toFixed(0)}</div>
-          </div>
+          </button>
         </Draggable>
         <Draggable handle="strong" {...dragHandlers}>
           <div className="box no-cursor">
