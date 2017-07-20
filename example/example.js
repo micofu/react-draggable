@@ -86,6 +86,18 @@ var App = React.createClass({
             <div>x: {deltaPosition.x.toFixed(0)}, y: {deltaPosition.y.toFixed(0)}</div>
           </div>
         </Draggable>
+         <Draggable onDrag={this.handleDrag} {...dragHandlers}>
+          <div>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul> 
+            <div>I track my deltas</div>
+            <div>x: {deltaPosition.x.toFixed(0)}, y: {deltaPosition.y.toFixed(0)}</div>
+          </div>
+        </Draggable>
         <Draggable handle="strong" {...dragHandlers}>
           <div className="box no-cursor">
             <strong className="cursor"><div>Drag here</div></strong>
